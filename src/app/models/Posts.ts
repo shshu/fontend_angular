@@ -4,10 +4,10 @@ export class Post {
     body: string;
     votes: number;
 
-    constructor() {
+    constructor(title: string = 'title', body: string = 'body') {
         this.id = 0;
-        this.title = '';
-        this.body = '';
+        this.title = title;
+        this.body = body;
         this.votes = 0;
     }
 
